@@ -4,5 +4,5 @@
 Fully open sourced and at its best for everyones usage.
 
 Rayfield:
-`loadstring(game:HttpGet("[https://sirius.menu/rayfield](https://raw.githubusercontent.com/sc0t6/SHub/refs/heads/main/RayfieldUI/SHub.lua)"))()`
+```loadstring(game:HttpGet("[https://sirius.menu/rayfield](https://raw.githubusercontent.com/sc0t6/SHub/refs/heads/main/RayfieldUI/SHub.lua)"))()```
 
