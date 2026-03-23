@@ -4,6 +4,7 @@ local Window = Rayfield:CreateWindow({
     Name = "S* Hub",
     LoadingTitle = "S* Hub, Completely Free.",
     LoadingSubtitle = "Update v1.0",
+    Theme = "Ocean",
     ConfigurationSaving = {
         Enabled = false
     }
