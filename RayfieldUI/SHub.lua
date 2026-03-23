@@ -118,3 +118,5 @@ Rayfield:Notify({
     Content = "Every script should work.",
     Duration = 5
 })
+
+Rayfield:LoadConfiguration()
