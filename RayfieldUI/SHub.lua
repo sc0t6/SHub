@@ -120,6 +120,7 @@ local InfoSection = SettingsTab:CreateSection("Hub Info")
 SettingsTab:CreateLabel("Game ID: " .. game.GameId)
 SettingsTab:CreateLabel("User ID: " .. game:GetService("Players").LocalPlayer.UserId)
 SettingsTab:CreateLabel("Username: " .. game:GetService("Players").LocalPlayer.Name)
+SettingsTab:CreateLabel("Username: " .. game:GetService("Players").LocalPlayer.Name)
 
 SettingsTab:CreateButton({
     Name = "Unload Menu",
@@ -127,6 +128,34 @@ SettingsTab:CreateButton({
         Rayfield:Destroy()
     end
 })
+
+SettingsTab:CreateSection("Executor Info")
+
+local identity = "Unknown"
+if getidentity then
+    identity = "Level " .. tostring(getidentity())
+elseif syn and syn.get_thread_identity then
+    identity = "Level " .. tostring(syn.get_thread_identity())
+end
+SettingsTab:CreateLabel("Executor Level: " .. identity)
+
+local userAgent = "Unknown"
+if syn and syn.request then
+    local ok, res = pcall(function()
+        return syn.request({Url = "http://httpbin.org/user-agent", Method = "GET"})
+    end)
+    if ok and res and res.Body then
+        userAgent = res.Body
+    end
+elseif http_request then
+    local ok, res = pcall(function()
+        return http_request({Url = "http://httpbin.org/user-agent", Method = "GET"})
+    end)
+    if ok and res and res.Body then
+        userAgent = res.Body
+    end
+end
+SettingsTab:CreateLabel("User Agent: " .. userAgent)
 
 Rayfield:Notify({
     Title = "Loaded S* Hub.",
