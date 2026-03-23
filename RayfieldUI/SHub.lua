@@ -13,100 +13,100 @@ local MainTab = Window:CreateTab("Script Hubs", "badge-check")
 local GamesTab = Window:CreateTab("Games", 125094830280177)
 local UniversalTab = Window:CreateTab("Universal", 10740274875) 
 
-local Section = MainTab:CreateSection("This is not in any order of best to worst.")
+local WanringSection = MainTab:CreateSection("All of this and others, is not in any order of best to worst.")
     
 
-local Button = MainTab:CreateButton({
+local ForgeButton = MainTab:CreateButton({
     Name = "Forge Hub",
     Callback = function(v)
         v = loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/d5ed1fbd4301b1d18d75153c5b47181d.lua"))()
     end
 })
 
-local Button = MainTab:CreateButton({
+local MoonButton = MainTab:CreateButton({
     Name = "Moondiety",
     Callback = function(v)
         v = loadstring(game:HttpGet("https://raw.githubusercontent.com/m00ndiety/Moondiety/refs/heads/main/Loader"))()
     end
 })
 
-local Button = MainTab:CreateButton({
+local LuminButton = MainTab:CreateButton({
     Name = "Lumin Hub",
     Callback = function(v)
         v = loadstring(game:HttpGet("http://luminon.top/loader.lua"))()
     end
 })
 
-local Button = MainTab:CreateButton({
+local AxonButton = MainTab:CreateButton({
     Name = "Axon Hub",
     Callback = function(v)
         v = loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/97c3f6db55a2cf72141537a85458e5a7.lua"))()
     end
 })
 
-local Button = MainTab:CreateButton({
+local AtherButton = MainTab:CreateButton({
     Name = "Ather Hub",
     Callback = function(v)
         v = loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2529a5f9dfddd5523ca4e22f21cceffa.lua"))()
     end
 })
 
-local Button = MainTab:CreateButton({
+local RiftButton = MainTab:CreateButton({
     Name = "Rift Hub",
     Callback = function(v)
         v = loadstring(game:HttpGet("https://rifton.top/loader.lua"))()
     end
 })
 
-local Section = UniversalTab:CreateSection("Admin")
+local AdminSection = UniversalTab:CreateSection("Admin")
 
-local Button = UniversalTab:CreateButton({
+local INFYButton = UniversalTab:CreateButton({
     Name = "Infinite Yield",
     Callback = function(v)
         v = loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     end
 })
 
-local Button = UniversalTab:CreateButton({
+local NamelessButton = UniversalTab:CreateButton({
     Name = "Nameless Admin V1 (original)",
     Callback = function(a)
       a = loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
     end
 })
 
-local Button = UniversalTab:CreateButton({
+local NMVButton = UniversalTab:CreateButton({
     Name = "Nameless Admin V2",
     Callback = function(a)
       a = loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"))()
     end
 })
 
-local Section = UniversalTab:CreateSection("More Scripts")
+local MoreScriptsSection = UniversalTab:CreateSection("More Scripts")
 
-local Button = UniversalTab:CreateButton({
+local FSButton = UniversalTab:CreateButton({
     Name = "FScripts (Fun Scripts)",
     Callback = function(f)
       f = loadstring(game:HttpGet("https://raw.githubusercontent.com/sc0t6/FScripts/refs/heads/main/Source/sourcecode.lua"))()
     end
 })
 
-local Button = UniversalTab:CreateButton({
+local GTAButton = UniversalTab:CreateButton({
     Name = "GTA Mod Menu",
     Callback = function(f)
       f = loadstring(game:HttpGet("https://vt-now.github.io/VIOLENT/vt.lua"))()
     end
 })
 
-local Section = GamesTab:CreateSection("Game Scripts")
+local GameSection = GamesTab:CreateSection("Game Scripts")
 
-local Button = GamesTab:CreateButton({
+local NightsButton = GamesTab:CreateButton({
     Name = "99 Nights In The Forest Script",
     Callback = function(f)
         f = loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/nightsintheforest.lua", true))()
     end
 })
 
-local Button = GamesTab:CreateButton({
+local BrookButton = GamesTab:CreateButton({
     Name = "Brookhaven",
     Callback = function(b)
         b = loadstring(game:HttpGet("https://raw.githubusercontent.com/nxvap/Hexagon/refs/heads/main/brookhaven"))()
