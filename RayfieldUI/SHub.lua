@@ -9,11 +9,11 @@ local Window = Rayfield:CreateWindow({
     }
 })
 
-local MainTab = Window:CreateTab("Script Hubs", badge-check)
+local MainTab = Window:CreateTab("Script Hubs", "badge-check")
 local GamesTab = Window:CreateTab("Games", 125094830280177)
 local UniversalTab = Window:CreateTab("Universal", 10740274875) 
 
-local Section = MainTab:CreateSector("This is not in any order of best to worst.")
+local Section = MainTab:CreateSection("This is not in any order of best to worst.")
     
 
 local Button = MainTab:CreateButton({
@@ -81,7 +81,7 @@ local Button = UniversalTab:CreateButton({
     end
 })
 
-local Section = UniversalTab:CreateSector("More Scripts")
+local Section = UniversalTab:CreateSection("More Scripts")
 
 local Button = UniversalTab:CreateButton({
     Name = "FScripts (Fun Scripts)",
