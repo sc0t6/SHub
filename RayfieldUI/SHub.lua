@@ -13,7 +13,7 @@ local Window = Rayfield:CreateWindow({
 local MainTab = Window:CreateTab("Script Hubs", "badge-check")
 local GamesTab = Window:CreateTab("Games", 125094830280177)
 local UniversalTab = Window:CreateTab("Universal", 10740274875)
-local SettingsTab = Window:CreateTab("Universal", "cog") 
+local SettingsTab = Window:CreateTab("Settings", "cog") 
 
 local WarningSection = MainTab:CreateSection("All of this and others, is not in any order of best to worst.")
     
@@ -114,8 +114,6 @@ local BrookButton = GamesTab:CreateButton({
         b = loadstring(game:HttpGet("https://raw.githubusercontent.com/nxvap/Hexagon/refs/heads/main/brookhaven"))()
     end
 })
-
-local SettingsTab = Window:CreateTab("Settings", 4483345998)
 
 local InfoSection = SettingsTab:CreateSection("Hub Info")
 
