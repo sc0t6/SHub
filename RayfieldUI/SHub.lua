@@ -120,7 +120,6 @@ local InfoSection = SettingsTab:CreateSection("Hub Info")
 SettingsTab:CreateLabel("Game ID: " .. game.GameId)
 SettingsTab:CreateLabel("User ID: " .. game:GetService("Players").LocalPlayer.UserId)
 SettingsTab:CreateLabel("Username: " .. game:GetService("Players").LocalPlayer.Name)
-SettingsTab:CreateLabel("Username: " .. game:GetService("Players").LocalPlayer.Name)
 
 SettingsTab:CreateButton({
     Name = "Unload Menu",
