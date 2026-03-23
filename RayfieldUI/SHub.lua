@@ -12,9 +12,10 @@ local Window = Rayfield:CreateWindow({
 
 local MainTab = Window:CreateTab("Script Hubs", "badge-check")
 local GamesTab = Window:CreateTab("Games", 125094830280177)
-local UniversalTab = Window:CreateTab("Universal", 10740274875) 
+local UniversalTab = Window:CreateTab("Universal", 10740274875)
+local SettingsTab = Window:CreateTab("Universal", "cog") 
 
-local WanringSection = MainTab:CreateSection("All of this and others, is not in any order of best to worst.")
+local WarningSection = MainTab:CreateSection("All of this and others, is not in any order of best to worst.")
     
 
 local ForgeButton = MainTab:CreateButton({
@@ -111,6 +112,21 @@ local BrookButton = GamesTab:CreateButton({
     Name = "Brookhaven",
     Callback = function(b)
         b = loadstring(game:HttpGet("https://raw.githubusercontent.com/nxvap/Hexagon/refs/heads/main/brookhaven"))()
+    end
+})
+
+local SettingsTab = Window:CreateTab("Settings", 4483345998)
+
+local InfoSection = SettingsTab:CreateSection("Hub Info")
+
+SettingsTab:CreateLabel("Game ID: " .. game.GameId)
+SettingsTab:CreateLabel("User ID: " .. game:GetService("Players").LocalPlayer.UserId)
+SettingsTab:CreateLabel("Username: " .. game:GetService("Players").LocalPlayer.Name)
+
+SettingsTab:CreateButton({
+    Name = "Unload Menu",
+    Callback = function()
+        Rayfield:Destroy()
     end
 })
 
