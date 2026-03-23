@@ -9,7 +9,7 @@ local Window = Rayfield:CreateWindow({
     }
 })
 
-local MainTab = Window:CreateTab("Script Hubs", 4483362458)
+local MainTab = Window:CreateTab("Script Hubs", badge-check)
 local GamesTab = Window:CreateTab("Games", 125094830280177)
 local UniversalTab = Window:CreateTab("Universal", 10740274875) 
 
